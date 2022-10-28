@@ -1,0 +1,24 @@
+{
+  "id": 2,
+  "globalId": "c6d5fd21-e5ae-403f-9fe2-2e6af17c2223",
+  "namespace": {
+    "id": 1,
+    "globalId": "a4f5c730-7c11-4676-a10c-ca45cda0b8be",
+    "name": "PAASysUpdates",
+    "description": "",
+    "isSystem": true
+  },
+  "name": "AppBuilderVersion",
+  "description": "",
+  "parser": "<parser><type>string</type><replace>false</replace><decodeHtml>false</decodeHtml></parser>",
+  "defaultValue": "",
+  "cacheTime": 0,
+  "cacheLayer": "Global",
+  "src": {
+    "sql": "SELECT Version FROM Packages\r\nWHERE Name = 'App.Builder'",
+    "defaultColumn": "Version",
+    "columns": "",
+    "connectionString": "",
+    "type": "db"
+  }
+}
